@@ -2,27 +2,51 @@
 @use "./base/reset";
 @use "./abstracts/variables" as var;
 
+/*Spacing*/
 body {
     padding: 0 1em;
+    max-width: 60rem;
 }
+
+p, li {
+    max-width: 55ch;
+}
+
+p {
+    padding-block: 1em;
+}
+
+body {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+
+/* Images */
 
 svg {
     max-width: 1rem;
 }
 
+
 /*Typography*/
 
 body {
     font-family: var.$body-text-font;
+    line-height: 1.5em;
 }
 
 h1 {
     font-family: var.$accent-font;
     font-size: 5.5rem;
+    line-height: 0.9em;
+    letter-spacing: -0.3rem;
 }
 
 h2, h3, h4 {
     font-family: var.$general-header-font;
+    line-height: 1em;
 }
 
 h2 {
