@@ -45,9 +45,11 @@ body {
 
 h1 {
     font-family: var.$accent-font;
-    font-size: 5.5rem;
+    font-size: clamp(5.5rem, 2rem + 13vw, 10rem);
     line-height: 0.9em;
     letter-spacing: -0.3rem;
+    margin: 0;
+    padding-block-start: 3rem;
 }
 
 h2, h3, h4 {
@@ -56,7 +58,8 @@ h2, h3, h4 {
 }
 
 h2 {
-font-size: 2rem;
+font-size: clamp(2rem, 1rem + 5vw, 2.7rem);
+max-width: 50rem;
 }
 
 h3, h4 {
